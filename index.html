@@ -127,5 +127,19 @@
 
 <script src="script.js"></script>
 <script src="site-content.js"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  // Faz os links de convite/recuperação de senha do Netlify Identity
+  // funcionarem quando chegam na página principal do site.
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function (user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function () {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>
