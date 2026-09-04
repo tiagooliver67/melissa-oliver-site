@@ -1,0 +1,59 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: "pt"
+
+media_folder: "assets/uploads"
+public_folder: "assets/uploads"
+
+collections:
+  - name: "site"
+    label: "Site"
+    files:
+      - file: "data.json"
+        label: "Conteúdo do site"
+        name: "conteudo"
+        fields:
+          - label: "Início (topo do site)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Frase de efeito", name: "eyebrow", widget: "string" }
+              - { label: "Frase manuscrita (assinatura)", name: "script", widget: "text", hint: "Use uma linha em branco (Enter) para quebrar a frase em duas linhas." }
+              - { label: "Texto de apresentação", name: "copy", widget: "text" }
+              - { label: "Foto principal", name: "photo", widget: "image" }
+              - { label: "Link do Instagram", name: "instagram_url", widget: "string" }
+          - label: "Conquista"
+            name: "achievement"
+            widget: "object"
+            fields:
+              - { label: "Título (ex: 3º LUGAR)", name: "title", widget: "string" }
+              - { label: "Subtítulo (ex: KATA)", name: "subtitle", widget: "string" }
+              - { label: "Nome do campeonato", name: "event", widget: "string" }
+              - { label: "Texto da conquista", name: "text", widget: "text" }
+              - { label: "Foto da conquista", name: "photo", widget: "image" }
+          - label: "Equipe / Quem faz parte"
+            name: "team"
+            widget: "list"
+            summary: "{{name}} ({{role}})"
+            fields:
+              - { label: "Função (ex: PROFESSORA, TIO)", name: "role", widget: "string" }
+              - { label: "Nome", name: "name", widget: "string" }
+              - { label: "Foto", name: "photo", widget: "image" }
+          - label: "Galeria de momentos"
+            name: "moments"
+            widget: "list"
+            field: { label: "Foto", name: "photo", widget: "image" }
+          - label: "Próximo desafio"
+            name: "next"
+            widget: "object"
+            fields:
+              - { label: "Texto", name: "text", widget: "text" }
+              - { label: "Foto", name: "photo", widget: "image" }
+          - label: "Contato"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "E-mail de contato", name: "email", widget: "string" }
+              - { label: "Usuário do Instagram (ex: @melissaoliver)", name: "instagram_handle", widget: "string" }
