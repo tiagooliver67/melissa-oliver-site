@@ -22,7 +22,7 @@ collections:
               - { label: "Frase de efeito", name: "eyebrow", widget: "string" }
               - { label: "Frase manuscrita (assinatura)", name: "script", widget: "text", hint: "Use uma linha em branco (Enter) para quebrar a frase em duas linhas." }
               - { label: "Texto de apresentação", name: "copy", widget: "text" }
-              - { label: "Foto principal", name: "photo", widget: "image" }
+              - { label: "Foto principal", name: "photo", widget: "image", hint: "Foto vertical (retrato), proporção aproximada 3:4. Ideal em alta resolução, a partir de 1000×1400px. A imagem é cortada automaticamente para preencher o espaço." }
               - { label: "Link do Instagram", name: "instagram_url", widget: "string" }
           - label: "Conquista"
             name: "achievement"
@@ -32,7 +32,7 @@ collections:
               - { label: "Subtítulo (ex: KATA)", name: "subtitle", widget: "string" }
               - { label: "Nome do campeonato", name: "event", widget: "string" }
               - { label: "Texto da conquista", name: "text", widget: "text" }
-              - { label: "Foto da conquista", name: "photo", widget: "image" }
+              - { label: "Foto da conquista", name: "photo", widget: "image", hint: "Foto horizontal (paisagem), proporção aproximada 16:9. Ideal a partir de 1200×700px. A imagem é cortada automaticamente para preencher o espaço." }
           - label: "Equipe / Quem faz parte"
             name: "team"
             widget: "list"
@@ -40,17 +40,17 @@ collections:
             fields:
               - { label: "Função (ex: PROFESSORA, TIO)", name: "role", widget: "string" }
               - { label: "Nome", name: "name", widget: "string" }
-              - { label: "Foto", name: "photo", widget: "image" }
+              - { label: "Foto", name: "photo", widget: "image", hint: "Foto no formato retrato/quadrado, proporção aproximada 3:4 a 1:1. Ideal a partir de 600×700px. A imagem é cortada automaticamente para preencher o espaço." }
           - label: "Galeria de momentos"
             name: "moments"
             widget: "list"
-            field: { label: "Foto", name: "photo", widget: "image" }
+            field: { label: "Foto", name: "photo", widget: "image", hint: "Fotos horizontais. A 1ª foto aparece maior (proporção aprox. 16:9); as demais são mais estreitas (proporção aprox. 4:3). Ideal a partir de 1000×600px cada. As imagens são cortadas automaticamente para preencher o espaço." }
           - label: "Próximo desafio"
             name: "next"
             widget: "object"
             fields:
               - { label: "Texto", name: "text", widget: "text" }
-              - { label: "Foto", name: "photo", widget: "image" }
+              - { label: "Foto", name: "photo", widget: "image", hint: "Foto horizontal (paisagem), proporção aproximada 16:9. Ideal a partir de 1200×700px. A imagem é cortada automaticamente para preencher o espaço." }
           - label: "Contato"
             name: "contact"
             widget: "object"
