@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "eyebrow": "FORÇA • DISCIPLINA • PROPÓSITO",
+    "script": "Um movimento\nde cada vez.",
+    "copy": "Atleta de karatê de João Dourado — BA,\nconstruindo uma trajetória de disciplina,\ndedicação e evolução.",
+    "photo": "assets/melissa-hero.jpg",
+    "instagram_url": "https://instagram.com/"
+  },
+  "achievement": {
+    "title": "3º LUGAR",
+    "subtitle": "KATA",
+    "event": "CAMPEONATO BAIANO DE KARATÊ 2026",
+    "text": "Uma conquista construída através de treino, dedicação e coragem para entrar no tatame e representar João Dourado.",
+    "photo": "assets/competition.jpg"
+  },
+  "team": [
+    {
+      "role": "PROFESSORA",
+      "name": "GEL",
+      "photo": "assets/coach-gel.jpg"
+    },
+    {
+      "role": "PROFESSOR",
+      "name": "CAÍQUE",
+      "photo": "assets/coach-caique.jpg"
+    },
+    {
+      "role": "PROFESSORA",
+      "name": "HEVELYN",
+      "photo": "assets/coach-hevelyn.jpg"
+    },
+    {
+      "role": "TIO",
+      "name": "PIMA",
+      "photo": "assets/coach-pima.jpg"
+    }
+  ],
+  "moments": [
+    "assets/moment-1.jpg",
+    "assets/moment-2.jpg",
+    "assets/moment-3.jpg",
+    "assets/moment-4.jpg"
+  ],
+  "next": {
+    "text": "Novos treinos, novas competições, novos objetivos, novas conquistas.",
+    "photo": "assets/next.jpg"
+  },
+  "contact": {
+    "email": "contato@melissaoliver.com.br",
+    "instagram_handle": "@melissaoliver"
+  }
+}
