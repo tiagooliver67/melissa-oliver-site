@@ -36,10 +36,26 @@
     }
   ],
   "journey": [
-    { "label": "TREINO", "text": "Dedicação diária.", "photo": "assets/timeline-train.jpg" },
-    { "label": "VIAGEM", "text": "Novos caminhos.", "photo": "assets/timeline-trip.jpg" },
-    { "label": "COMPETIÇÃO", "text": "Desafios que ensinam.", "photo": "assets/timeline-comp.jpg" },
-    { "label": "CONQUISTA", "text": "3º lugar no Kata.", "photo": "assets/timeline-win.jpg" }
+    {
+      "label": "TREINO",
+      "text": "Dedicação diária.",
+      "photo": "assets/timeline-train.jpg"
+    },
+    {
+      "label": "VIAGEM",
+      "text": "Novos caminhos.",
+      "photo": "assets/uploads/d9ff653d-2ca9-4038-b4e3-cd02d278fd3c.jpeg"
+    },
+    {
+      "label": "COMPETIÇÃO",
+      "text": "Desafios que ensinam.",
+      "photo": "assets/uploads/captura-de-tela-2026-09-04-às-23.30.28.png"
+    },
+    {
+      "label": "CONQUISTA",
+      "text": "3º lugar no Kata.",
+      "photo": "assets/uploads/foto-da-conquista.jpg"
+    }
   ],
   "moments": [
     "assets/moment-1.jpg",
