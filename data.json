@@ -25,18 +25,13 @@
       "photo": "assets/uploads/gel.jpg"
     },
     {
-      "role": "PROFESSORA",
-      "name": "HEVELYN",
-      "photo": "assets/uploads/gel.jpg"
-    },
-    {
       "role": "TIO",
       "name": "PIMA",
       "photo": "assets/uploads/gel.jpg"
     }
   ],
   "moments": [
-    "assets/moment-1.jpg",
+    "assets/uploads/captura-de-tela-2026-09-04-às-23.16.55.png",
     "assets/moment-2.jpg",
     "assets/moment-3.jpg",
     "assets/moment-4.jpg"
