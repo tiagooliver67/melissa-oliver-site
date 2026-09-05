@@ -54,6 +54,13 @@
           setImg("team-photo-" + i, member.photo);
         });
       }
+      if (Array.isArray(d.journey)) {
+        d.journey.forEach(function (step, i) {
+          setText("journey-label-" + i, step.label);
+          setText("journey-text-" + i, step.text);
+          setImg("journey-photo-" + i, step.photo);
+        });
+      }
       if (Array.isArray(d.moments)) {
         d.moments.forEach(function (photo, i) {
           setImg("moment-photo-" + i, photo);
