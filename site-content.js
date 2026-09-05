@@ -64,7 +64,11 @@
       if (Array.isArray(d.moments)) {
         d.moments.forEach(function (photo, i) {
           setImg("moment-photo-" + i, photo);
+          setImg("ig-grid-photo-" + i, photo);
         });
+      }
+      if (d.hero && d.hero.photo) {
+        setImg("ig-grid-photo-4", d.hero.photo);
       }
       if (d.next) {
         setHtmlWithBreaks("next-text", d.next.text);
