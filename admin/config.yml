@@ -41,6 +41,14 @@ collections:
               - { label: "Função (ex: PROFESSORA, TIO)", name: "role", widget: "string" }
               - { label: "Nome", name: "name", widget: "string" }
               - { label: "Foto", name: "photo", widget: "image", hint: "Foto no formato retrato/quadrado, proporção aproximada 3:4 a 1:1. Ideal a partir de 600×700px. A imagem é cortada automaticamente para preencher o espaço." }
+          - label: "A história (linha do tempo)"
+            name: "journey"
+            widget: "list"
+            summary: "{{label}}"
+            fields:
+              - { label: "Etapa (ex: TREINO, VIAGEM)", name: "label", widget: "string" }
+              - { label: "Texto curto", name: "text", widget: "string" }
+              - { label: "Foto", name: "photo", widget: "image", hint: "Foto pequena, formato quadrado/levemente horizontal (aprox. 1:1). Ideal a partir de 400×400px. Aparece em preto e branco automaticamente no site." }
           - label: "Galeria de momentos"
             name: "moments"
             widget: "list"
