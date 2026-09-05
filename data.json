@@ -17,22 +17,22 @@
     {
       "role": "PROFESSOR",
       "name": "GEL",
-      "photo": "assets/uploads/captura-de-tela-2026-09-04-às-23.08.00.png"
+      "photo": "assets/uploads/gel.jpg"
     },
     {
       "role": "PROFESSOR",
       "name": "CAÍQUE",
-      "photo": "assets/coach-caique.jpg"
+      "photo": "assets/uploads/gel.jpg"
     },
     {
       "role": "PROFESSORA",
       "name": "HEVELYN",
-      "photo": "assets/coach-hevelyn.jpg"
+      "photo": "assets/uploads/gel.jpg"
     },
     {
       "role": "TIO",
       "name": "PIMA",
-      "photo": "assets/coach-pima.jpg"
+      "photo": "assets/uploads/gel.jpg"
     }
   ],
   "moments": [
