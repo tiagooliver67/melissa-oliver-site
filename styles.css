@@ -137,7 +137,7 @@ button{font:inherit;cursor:pointer}
 .values>div:first-child{padding-left:0}
 .values>div:last-child{border:0}
 .values i{font-style:normal;color:var(--red);display:block;margin-bottom:14px}
-.values i svg{width:42px;height:42px;display:block}
+.values i img{width:40px;height:40px;object-fit:contain;display:block}
 .values small{display:block;color:var(--red);font-size:7px;font-weight:900;letter-spacing:1.5px}
 .values h3{font-family:"Barlow Condensed";font-size:23px;margin:6px 0}
 .values p{font-size:9px;color:#666;line-height:1.5}
