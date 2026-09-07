@@ -14,6 +14,16 @@
     var el = document.getElementById(id);
     if (el && value) el.src = value;
   }
+  function setLinkFromImg(id, url) {
+    if (!url) return;
+    var el = document.getElementById(id);
+    var link = el && el.closest("a");
+    if (link) {
+      link.href = url;
+      link.target = "_blank";
+      link.rel = "noopener";
+    }
+  }
   function setAllHref(className, value) {
     if (!value) return;
     document.querySelectorAll("." + className).forEach(function (el) {
@@ -65,6 +75,12 @@
         d.moments.forEach(function (photo, i) {
           setImg("moment-photo-" + i, photo);
           setImg("ig-grid-photo-" + i, photo);
+        });
+      }
+      if (Array.isArray(d.instagram_permalinks)) {
+        d.instagram_permalinks.forEach(function (url, i) {
+          setLinkFromImg("moment-photo-" + i, url);
+          setLinkFromImg("ig-grid-photo-" + i, url);
         });
       }
       if (d.hero && d.hero.photo) {
