@@ -208,7 +208,8 @@ button{font:inherit;cursor:pointer}
 .support-grid.is-visible>div:nth-child(3){transition-delay:.25s}
 .support-grid.is-visible>div:nth-child(4){transition-delay:.35s}
 .support-grid>div:last-child{border:0}
-.support-grid i{font-style:normal;color:var(--red);font-size:28px}
+.support-grid i{font-style:normal;color:var(--red);display:flex;justify-content:center;margin-bottom:6px}
+.support-grid i img{width:34px;height:34px;object-fit:contain;display:block}
 .support-grid b{display:block;font-family:"Barlow Condensed";font-size:20px;margin:5px}
 .support-grid p{font-size:8px;color:#666;line-height:1.4}
 .center-btn{width:max-content;margin:auto}
