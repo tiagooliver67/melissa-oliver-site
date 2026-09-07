@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: tiagooliver67/melissa-oliver-site
   branch: main
+  base_url: https://melissa-cms-oauth.tiagooliver67.workers.dev
+  auth_endpoint: auth
 
 locale: "pt"
 
