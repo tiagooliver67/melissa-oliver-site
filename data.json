@@ -25,14 +25,14 @@
       "photo": "assets/uploads/gel.jpg"
     },
     {
-      "role": "PROFESSORA",
-      "name": "HEVELYN",
-      "photo": "assets/coach-hevelyn.jpg"
-    },
-    {
       "role": "TIO",
       "name": "PIMA",
       "photo": "assets/coach-pima.jpg"
+    },
+    {
+      "role": "PROFESSORA",
+      "name": "HEVELYN",
+      "photo": "assets/coach-hevelyn.jpg"
     }
   ],
   "journey": [
