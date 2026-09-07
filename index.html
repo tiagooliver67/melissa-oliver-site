@@ -12,10 +12,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="header">
+<header class="header" id="site-header">
   <a class="logo" href="#inicio" aria-label="Melissa Oliver">
-    <span class="mo">MO<i></i></span>
-    <span class="logotxt">MELISSA <b>OLIVER</b><small>KARATÊ</small></span>
+    <img class="brand-logo" src="assets/logo.png" alt="Melissa Oliver">
   </a>
   <button class="menu" aria-label="Abrir menu">☰</button>
   <nav>
@@ -28,7 +27,7 @@
 <main>
 <section id="inicio" class="hero">
   <div class="hero-noise"></div>
-  <div class="hero-copy reveal">
+  <div class="hero-copy">
     <div class="micro" id="hero-eyebrow">FORÇA <b>•</b> DISCIPLINA <b>•</b> PROPÓSITO</div>
     <h1>MELISSA<br><em>OLIVER</em></h1>
     <div class="script" id="hero-script">Um movimento<br>de cada vez.</div>
@@ -45,7 +44,7 @@
 </section>
 
 <section id="conquistas" class="achievement">
-  <div class="achievement-text reveal">
+  <div class="achievement-text">
     <span class="kicker">CONQUISTA</span>
     <h2><span id="ach-title">3º LUGAR</span><br><em id="ach-subtitle">KATA</em></h2>
     <strong class="tag" id="ach-event">CAMPEONATO BAIANO DE KARATÊ 2026</strong>
@@ -59,7 +58,7 @@
 </section>
 
 <section id="trajetoria" class="journey dark">
-  <div class="journey-title reveal"><span class="kicker">A HISTÓRIA</span><h2>ESSA HISTÓRIA<br>ESTÁ APENAS<br><em>COMEÇANDO.</em></h2></div>
+  <div class="journey-title"><span class="kicker">A HISTÓRIA</span><h2>ESSA HISTÓRIA<br>ESTÁ APENAS<br><em>COMEÇANDO.</em></h2></div>
   <div class="timeline">
     <article><img id="journey-photo-0" src="assets/timeline-train.jpg" alt=""><span id="journey-label-0">TREINO</span><b id="journey-text-0">Dedicação diária.</b></article>
     <i class="connector"></i>
@@ -81,7 +80,7 @@
 <section id="momentos" class="moments dark">
   <div class="section-head"><div><span class="kicker">MOMENTOS</span><h2>QUE FAZEM PARTE<br>DA HISTÓRIA.</h2></div><a class="pill outline ig-link" href="https://instagram.com/" target="_blank" rel="noopener">VER MAIS MOMENTOS <b>▦</b></a></div>
   <div class="gallery">
-    <img class="wide" id="moment-photo-0" src="assets/moment-1.jpg" alt=""><img id="moment-photo-1" src="assets/moment-2.jpg" alt=""><img id="moment-photo-2" src="assets/moment-3.jpg" alt=""><img id="moment-photo-3" src="assets/moment-4.jpg" alt="">
+    <a class="wide"><img id="moment-photo-0" src="assets/moment-1.jpg" alt=""></a><a><img id="moment-photo-1" src="assets/moment-2.jpg" alt=""></a><a><img id="moment-photo-2" src="assets/moment-3.jpg" alt=""></a><a><img id="moment-photo-3" src="assets/moment-4.jpg" alt=""></a>
   </div>
 </section>
 
@@ -113,12 +112,12 @@
 
 <section id="contato" class="instagram dark">
   <div class="ig-intro"><span class="kicker">INSTAGRAM</span><h2>ACOMPANHE<br>A MELISSA</h2><p id="ig-handle">@melissaoliver</p><a class="pill outline ig-link" href="https://instagram.com/" target="_blank" rel="noopener">SEGUIR NO INSTAGRAM ◎</a></div>
-  <div class="ig-grid"><img id="ig-grid-photo-0" src="assets/moment-1.jpg" alt=""><img id="ig-grid-photo-1" src="assets/moment-2.jpg" alt=""><img id="ig-grid-photo-2" src="assets/moment-3.jpg" alt=""><img id="ig-grid-photo-3" src="assets/moment-4.jpg" alt=""><img id="ig-grid-photo-4" src="assets/melissa-hero.jpg" alt=""></div>
+  <div class="ig-grid"><a><img id="ig-grid-photo-0" src="assets/moment-1.jpg" alt=""></a><a><img id="ig-grid-photo-1" src="assets/moment-2.jpg" alt=""></a><a><img id="ig-grid-photo-2" src="assets/moment-3.jpg" alt=""></a><a><img id="ig-grid-photo-3" src="assets/moment-4.jpg" alt=""></a><a><img id="ig-grid-photo-4" src="assets/melissa-hero.jpg" alt=""></a></div>
 </section>
 </main>
 
 <footer>
-  <div class="footer-logo"><span class="mo">MO<i></i></span><b>MELISSA</b><em>OLIVER</em><small>KARATÊ</small></div>
+  <div class="footer-logo"><img class="brand-logo footer-brand-logo" src="assets/logo.png" alt="Melissa Oliver"></div>
   <p>Atleta de karatê de João Dourado — BA.<br>Construindo uma trajetória com disciplina,<br>dedicação e propósito.</p>
   <div class="footer-links"><b>NAVEGAÇÃO</b><a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#conquistas">Conquistas</a><a href="#trajetoria">Trajetória</a><a href="#apoie">Apoie</a><a href="#contato">Contato</a></div>
   <div class="footer-motto">Um movimento<br><em>de cada vez.</em></div>
