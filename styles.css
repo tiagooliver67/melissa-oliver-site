@@ -51,7 +51,7 @@ button{font:inherit;cursor:pointer}
 .menu{display:none;background:none;border:0;color:#fff;font-size:22px}
 
 /* ===== Hero ===== */
-.hero{height:780px;position:relative;overflow:hidden;background:radial-gradient(circle at 70% 45%,rgba(215,25,32,.15),transparent 28%),var(--ink);color:#fff;padding:160px 5.5vw 0}
+.hero{height:780px;position:relative;overflow:hidden;background:radial-gradient(circle at 70% 45%,rgba(215,25,32,.15),transparent 28%),radial-gradient(circle at 88% 18%,rgba(215,25,32,.14),transparent 22%),radial-gradient(circle at 92% 82%,rgba(215,25,32,.12),transparent 20%),var(--ink);color:#fff;padding:160px 5.5vw 0}
 .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#080808 0%,rgba(8,8,8,.96) 32%,rgba(8,8,8,.3) 70%,#080808 100%);z-index:1}
 .hero-noise{position:absolute;inset:0;opacity:.12;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:4px 4px;mask-image:linear-gradient(90deg,transparent,#000,transparent)}
 .hero-copy{position:relative;z-index:4;width:42%;max-width:590px}
@@ -59,21 +59,22 @@ button{font:inherit;cursor:pointer}
 .micro b{color:var(--red);margin:0 6px}
 .hero h1{font-family:"Barlow Condensed";font-size:88px;line-height:.78;letter-spacing:-4px;margin:30px 0 15px}
 .hero h1 em{font-style:normal;color:var(--red)}
-.script{font-family:Caveat,cursive;font-size:38px;line-height:.88;margin-bottom:20px}
+.script{font-family:Caveat,cursive;font-size:38px;line-height:.88;margin-bottom:20px;position:relative}
+.script:after{content:"";display:block;width:150px;height:16px;margin-top:2px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 20'%3E%3Cpath d='M2 14 Q40 2 80 12 T158 8' stroke='%23d71920' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat;background-size:contain;opacity:.85}
 .hero-copy p,.hero p{font-size:12px;line-height:1.6;color:#c4c4c4}
 .actions{display:flex;gap:12px;margin-top:26px}
-.hero-image{position:absolute;z-index:2;right:8%;bottom:0;width:44%;height:90%;overflow:hidden;mask-image:linear-gradient(to bottom,#000 86%,transparent 100%);clip-path:inset(0 100% 0 0);animation:curtain 1.05s var(--ease-kime) .55s forwards}
+.hero-image{position:absolute;z-index:2;right:0;bottom:0;width:48%;height:100%;overflow:hidden;mask-image:linear-gradient(to bottom,#000 92%,transparent 100%);clip-path:inset(0 100% 0 0);animation:curtain 1.05s var(--ease-kime) .55s forwards}
 .hero-image img{object-position:center top;filter:contrast(1.04) saturate(.92);transform:scale(1.08);transition:transform 1.4s var(--ease-kime)}
-.hero-image:after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,var(--ink) 0%,rgba(8,8,8,0) 26%,rgba(8,8,8,0) 84%,var(--ink) 100%)}
+.hero-image:after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,var(--ink) 0%,rgba(8,8,8,0) 32%)}
 .hero.is-ready .hero-image img{transform:scale(1)}
-.giant-mo{position:absolute;z-index:1;right:18%;top:155px;font-family:"Barlow Condensed";font-size:280px;font-weight:900;letter-spacing:-35px;color:#171717;line-height:.7;animation:float 7s ease-in-out infinite}
+.giant-mo{position:absolute;z-index:1;right:20%;top:150px;font-family:"Barlow Condensed";font-size:280px;font-weight:900;letter-spacing:-35px;color:#171717;line-height:.7;animation:float 7s ease-in-out infinite}
 .hero-values{position:absolute;z-index:5;right:5.5%;top:270px;display:flex;flex-direction:column;gap:25px}
-.hero-values span{display:flex;align-items:center;gap:10px}
-.hero-values i{font-style:normal;color:var(--red);font-size:25px}
+.hero-values span{display:flex;align-items:center;gap:12px}
+.hero-values i{font-style:normal;color:var(--red);font-size:15px;display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1.5px solid var(--red);border-radius:50%;flex:none}
 .hero-values b{font-size:10px}
 
 @keyframes curtain{to{clip-path:inset(0 0 0 0)}}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes float{0%,100%{transform:rotate(-10deg) translateY(0)}50%{transform:rotate(-10deg) translateY(-14px)}}
 
 /* sequência de entrada do herói (roda uma vez, ao carregar) */
 .hero-copy>*{opacity:0;transform:translateY(22px);animation:riseKime var(--dur-med) var(--ease-kime) forwards}
