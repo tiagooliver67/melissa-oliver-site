@@ -15,14 +15,14 @@
   },
   "team": [
     {
+      "role": "PAI",
+      "name": "TIAGO OLIVER",
+      "photo": "assets/uploads/4c1feac0-bc20-473c-bcc0-45a3a532c5d3.jpg"
+    },
+    {
       "role": "PROFESSORA",
       "name": "GEL",
       "photo": "assets/uploads/gel.jpg"
-    },
-    {
-      "role": "PROFESSOR",
-      "name": "CAÍQUE",
-      "photo": "assets/coach-caique.jpg"
     },
     {
       "role": "PROFESSORA",
