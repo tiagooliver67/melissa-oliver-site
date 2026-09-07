@@ -1,0 +1,44 @@
+name: Sincronizar Instagram
+
+on:
+  schedule:
+    # Todos os dias às 06:00 UTC (03:00 no horário da Bahia)
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Buscar publicações recentes do Instagram
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: node scripts/sync-instagram.js
+
+      - name: Renovar o token de acesso (long-lived)
+        if: success()
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          curl -s "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${IG_ACCESS_TOKEN}" || true
+          echo "Nota: o token renovado acima NÃO é salvo automaticamente (por segurança). Veja as instruções para renová-lo manualmente a cada ~50 dias."
+
+      - name: Commit e push das novas imagens
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json assets/instagram
+          git diff --cached --quiet && echo "Nada novo para commitar." || git commit -m "Atualiza publicações do Instagram automaticamente"
+          git push
