@@ -261,3 +261,138 @@ footer{background:var(--ink);color:#fff;border-top:1px solid var(--line);padding
   .support-grid{grid-template-columns:1fr 1fr}.support-grid>div{border-bottom:1px solid #ddd}.ig-grid{grid-template-columns:repeat(3,1fr);height:210px}.ig-grid img:nth-child(n+4){display:none}
   footer{grid-template-columns:1fr 1fr;padding-left:22px;padding-right:22px}.footer-motto{display:none}.copy{grid-column:1/-1}
 }
+
+/* ===================================================== */
+/* ===== Página Patrocinadores (patrocinadores.html) ===== */
+/* ===================================================== */
+.header nav a.is-active{color:var(--red)}
+.header nav a.is-active:after{width:100%}
+
+.sp-hero{min-height:660px;position:relative;overflow:hidden;background:radial-gradient(circle at 78% 30%,rgba(215,25,32,.16),transparent 30%),radial-gradient(circle at 92% 78%,rgba(215,25,32,.12),transparent 22%),var(--ink);color:#fff;display:grid;grid-template-columns:1.05fr .9fr;align-items:stretch;padding:150px 5.5vw 50px}
+.sp-hero-copy{position:relative;z-index:3;display:flex;flex-direction:column;justify-content:center;max-width:520px}
+.sp-hero h1{font-family:"Barlow Condensed";font-size:74px;line-height:.82;letter-spacing:-3px;margin:12px 0 16px}
+.sp-hero h1 em{font-style:normal;color:var(--red)}
+.sp-hero-copy>p{font-size:12px;line-height:1.65;color:#c4c4c4;max-width:420px}
+.sp-hero-byline{display:flex;align-items:center;gap:12px;margin-top:32px}
+.sp-hero-byline img{width:34px;height:34px;object-fit:contain}
+.sp-hero-byline small{display:block;font-size:9px;color:#999;line-height:1.5}
+.sp-hero-byline b{font-family:"Barlow Condensed";font-size:14px;letter-spacing:.5px}
+.sp-hero-image{position:relative;border-radius:6px;overflow:hidden;min-height:420px}
+.sp-hero-image img{object-position:50% 20%;filter:contrast(1.04) saturate(.92)}
+.sp-hero-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,8,0) 55%,rgba(8,8,8,.75) 100%)}
+.sp-hero-script{position:absolute;z-index:3;top:150px;right:5.5vw;text-align:right;font-family:Caveat,cursive;font-size:26px;color:#eee}
+.sp-hero-values{position:relative;z-index:3;display:flex;flex-direction:column;gap:16px;margin-top:30px}
+.sp-hero-values span{display:flex;align-items:center;gap:12px}
+.sp-hero-values i{font-style:normal;color:var(--red);font-size:13px;display:flex;align-items:center;justify-content:center;width:30px;height:30px;border:1.5px solid var(--red);border-radius:50%;flex:none}
+.sp-hero-values b{font-size:9px;letter-spacing:.5px}
+
+.sp-story{background:var(--paper);padding:50px 5.5vw;display:grid;grid-template-columns:1fr .85fr .85fr;gap:30px;align-items:center}
+.sp-story-text h2{font-family:"Barlow Condensed";font-size:44px;line-height:.82;margin:8px 0}
+.sp-story-text h2 em{font-style:normal;color:var(--red)}
+.sp-story-text p{font-size:10px;line-height:1.6;color:#555;max-width:340px;margin:12px 0 18px}
+.sp-story-photo{position:relative;height:100%;min-height:300px;border-radius:4px;overflow:hidden}
+.sp-story-badge{position:absolute;top:14px;left:14px;z-index:2;background:#fff;padding:10px 14px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.sp-story-badge .medal{width:44px;height:44px;border:5px solid var(--bronze);box-shadow:inset 0 0 0 2px var(--bronze-light);font-size:22px}
+.sp-story-badge strong{display:block;font-family:"Barlow Condensed";font-size:15px;line-height:1}
+.sp-story-badge small{display:block;font-size:7px;color:#777;margin-top:2px}
+.sp-quote{background:var(--ink);color:#fff;padding:26px 22px;height:100%;display:flex;flex-direction:column;justify-content:center;min-height:300px}
+.sp-quote span{font-size:9px;color:var(--red);font-weight:900;letter-spacing:2px}
+.sp-quote p{font-family:"Barlow Condensed";font-size:26px;line-height:1;margin:14px 0 0;color:#fff}
+.sp-quote b{color:var(--red)}
+
+.sp-why{background:var(--ink);color:#fff;padding:50px 5.5vw}
+.sp-why-head{max-width:520px;margin-bottom:26px}
+.sp-why-head h2{font-family:"Barlow Condensed";font-size:44px;line-height:.82;margin:8px 0}
+.sp-why-head h2 em{font-style:normal;color:var(--red)}
+.sp-why-head p{font-size:10px;line-height:1.6;color:#aaa}
+.sp-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.sp-cards>div{border:1px solid #262626;padding:24px 18px;background:#0f0f0f;transition:border-color .3s,transform .3s var(--ease-kime)}
+.sp-cards>div:hover{border-color:var(--red);transform:translateY(-4px)}
+.sp-cards i{font-style:normal;color:var(--red);font-size:18px;display:flex;align-items:center;justify-content:center;width:38px;height:38px;border:1.5px solid var(--red);border-radius:50%;margin-bottom:16px}
+.sp-cards b{display:block;font-family:"Barlow Condensed";font-size:16px;letter-spacing:.5px;margin-bottom:8px}
+.sp-cards p{font-size:9px;line-height:1.5;color:#999}
+
+.sp-expo{background:var(--paper);padding:50px 5.5vw}
+.sp-expo-head{max-width:520px;margin-bottom:26px}
+.sp-expo-head h2{font-family:"Barlow Condensed";font-size:44px;line-height:.82;margin:8px 0}
+.sp-expo-head h2 em{font-style:normal;color:var(--red)}
+.sp-expo-head p{font-size:10px;line-height:1.6;color:#555}
+.sp-expo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.sp-expo-grid figure{margin:0}
+.sp-expo-photo{position:relative;height:190px;overflow:hidden;background:#111}
+.sp-expo-photo img{filter:grayscale(.35) brightness(.75);transition:transform .6s var(--ease-kime)}
+.sp-expo-grid figure:hover .sp-expo-photo img{transform:scale(1.06)}
+.sp-expo-tag{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;font-family:"Barlow Condensed";font-size:15px;letter-spacing:1px;padding:0 10px}
+.sp-expo-tag span{border:1.5px dashed rgba(255,255,255,.7);padding:10px 14px}
+.sp-expo-grid figcaption{padding-top:10px}
+.sp-expo-grid figcaption b{display:block;font-family:"Barlow Condensed";font-size:16px}
+.sp-expo-grid figcaption small{display:block;font-size:8px;color:#666;margin-top:2px}
+
+.sp-sponsors{background:var(--ink);color:#fff;padding:50px 5.5vw;text-align:center}
+.sp-sponsors h2{font-family:"Barlow Condensed";font-size:40px;line-height:.85;margin:8px 0}
+.sp-sponsors h2 em{font-style:normal;color:var(--red)}
+.sp-sponsors>p{font-size:10px;color:#999;max-width:460px;margin:0 auto 28px}
+.sp-logo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:760px;margin:0 auto}
+.sp-logo-grid div{border:1px solid #333;padding:24px 10px;font-family:"Barlow Condensed";font-size:13px;letter-spacing:1px;color:#777}
+.sp-thanks{font-family:Caveat,cursive;font-size:24px;color:#eee;margin-top:26px}
+.sp-thanks em{color:var(--red);font-style:normal}
+
+.sp-impact{background:var(--paper);padding:50px 5.5vw;text-align:center}
+.sp-impact h2{font-family:"Barlow Condensed";font-size:40px;line-height:.85;margin:8px 0}
+.sp-impact h2 em{font-style:normal;color:var(--red)}
+.sp-impact>p{font-size:10px;color:#555;max-width:460px;margin:0 auto 28px}
+.sp-impact-grid{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid #ddd;border-bottom:1px solid #ddd}
+.sp-impact-grid>div{padding:22px 10px;border-right:1px solid #ddd}
+.sp-impact-grid>div:last-child{border-right:0}
+.sp-impact-grid i{font-style:normal;color:var(--red);font-size:18px;display:flex;align-items:center;justify-content:center;width:38px;height:38px;border:1.5px solid var(--red);border-radius:50%;margin:0 auto 10px}
+.sp-impact-grid b{display:block;font-family:"Barlow Condensed";font-size:15px;margin-bottom:4px}
+.sp-impact-grid p{font-size:8px;color:#777;line-height:1.4}
+
+.sp-plans{background:var(--ink);color:#fff;padding:50px 5.5vw;text-align:center}
+.sp-plans h2{font-family:"Barlow Condensed";font-size:42px;line-height:.85;margin:8px 0}
+.sp-plans h2 em{font-style:normal;color:var(--red)}
+.sp-plans>p{font-size:10px;color:#999;max-width:480px;margin:0 auto 28px}
+.sp-plan-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;text-align:left;margin-bottom:30px}
+.sp-plan-grid>div{border:1px solid #262626;background:#0f0f0f;padding:24px 18px;transition:border-color .3s,transform .3s var(--ease-kime)}
+.sp-plan-grid>div:hover{border-color:var(--red);transform:translateY(-4px)}
+.sp-plan-grid i{font-style:normal;color:var(--red);font-size:18px;display:block;margin-bottom:14px}
+.sp-plan-grid b{display:block;font-family:"Barlow Condensed";font-size:18px;letter-spacing:.5px;margin-bottom:10px}
+.sp-plan-grid ul{list-style:none;margin:0;padding:0}
+.sp-plan-grid li{font-size:9px;color:#999;line-height:1.7;padding-left:12px;position:relative}
+.sp-plan-grid li:before{content:"—";position:absolute;left:0;color:var(--red)}
+
+.sp-cta{background:var(--paper);display:grid;grid-template-columns:.9fr 1.1fr;min-height:320px}
+.sp-cta-image{height:100%;min-height:320px;overflow:hidden}
+.sp-cta-copy{display:flex;flex-direction:column;justify-content:center;padding:35px 5.5vw}
+.sp-cta-copy h2{font-family:"Barlow Condensed";font-size:48px;line-height:.82;margin:8px 0}
+.sp-cta-copy h2 em{font-style:normal;color:var(--red)}
+.sp-cta-copy>p{font-size:10px;color:#555;max-width:400px;margin:4px 0 20px}
+.sp-contacts{display:flex;gap:26px;margin-top:26px;flex-wrap:wrap}
+.sp-contacts a{display:flex;align-items:center;gap:10px}
+.sp-contacts i{font-style:normal;color:var(--red);font-size:15px;display:flex;align-items:center;justify-content:center;width:32px;height:32px;border:1.5px solid var(--red);border-radius:50%;flex:none}
+.sp-contacts small{display:block;font-size:8px;color:#777}
+.sp-contacts b{display:block;font-family:"Barlow Condensed";font-size:13px;color:#111}
+
+@media(max-width:900px){
+  .sp-hero{grid-template-columns:1fr;padding:130px 6vw 40px;min-height:auto}
+  .sp-hero-image{margin-top:30px;min-height:320px}
+  .sp-story{grid-template-columns:1fr;gap:20px}
+  .sp-cards{grid-template-columns:1fr 1fr}
+  .sp-expo-grid{grid-template-columns:1fr 1fr}
+  .sp-logo-grid{grid-template-columns:1fr 1fr}
+  .sp-impact-grid{grid-template-columns:1fr 1fr 1fr}
+  .sp-impact-grid>div:nth-child(3n){border-right:0}
+  .sp-plan-grid{grid-template-columns:1fr 1fr}
+  .sp-cta{grid-template-columns:1fr}
+  .sp-cta-image{height:260px}
+}
+@media(max-width:600px){
+  .sp-hero h1{font-size:56px}
+  .sp-cards{grid-template-columns:1fr}
+  .sp-expo-grid{grid-template-columns:1fr}
+  .sp-logo-grid{grid-template-columns:1fr 1fr}
+  .sp-impact-grid{grid-template-columns:1fr 1fr}
+  .sp-impact-grid>div:nth-child(3n){border-right:1px solid #ddd}
+  .sp-impact-grid>div:nth-child(2n){border-right:0}
+  .sp-plan-grid{grid-template-columns:1fr}
+}
