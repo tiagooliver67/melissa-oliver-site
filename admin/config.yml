@@ -68,3 +68,65 @@ collections:
             fields:
               - { label: "E-mail de contato", name: "email", widget: "string" }
               - { label: "Usuário do Instagram (ex: @melissaoliver)", name: "instagram_handle", widget: "string" }
+      - file: "patrocinadores.json"
+        label: "Página Patrocinadores"
+        name: "patrocinadores"
+        fields:
+          - label: "Início (topo da página)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Texto de apresentação", name: "copy", widget: "text" }
+              - { label: "Foto principal", name: "photo", widget: "image", hint: "Foto vertical/retrato. A imagem é cortada automaticamente para preencher o espaço." }
+              - { label: "Local (ex: JOÃO DOURADO — BA)", name: "location", widget: "string" }
+          - label: "Talento, disciplina, resultados"
+            name: "story"
+            widget: "object"
+            fields:
+              - { label: "Texto", name: "text", widget: "text" }
+              - { label: "Foto", name: "photo", widget: "image", hint: "Foto vertical/retrato. A imagem é cortada automaticamente para preencher o espaço." }
+              - { label: "Título da medalha (ex: 3º LUGAR — KATA)", name: "badge_title", widget: "string" }
+              - { label: "Nome do campeonato", name: "badge_event", widget: "string" }
+              - { label: "Frase de efeito (citação)", name: "quote", widget: "text", hint: "Pode usar <b>alguma palavra</b> para deixar em negrito e uma linha em branco para quebrar a frase." }
+          - label: "Por que patrocinar (4 cartões)"
+            name: "why"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+          - label: "Fotos — Onde sua marca aparece (Kimono, Camisas, Redes sociais, Eventos, nessa ordem)"
+            name: "expo_photos"
+            widget: "list"
+            field: { label: "Foto", name: "photo", widget: "image" }
+          - label: "Patrocinadores (logos)"
+            name: "sponsors"
+            widget: "list"
+            summary: "{{name}}"
+            allow_add: true
+            fields:
+              - { label: "Nome da empresa", name: "name", widget: "string" }
+              - { label: "Logo", name: "logo", widget: "image", hint: "Logo em PNG com fundo transparente funciona melhor. Enquanto não houver patrocinadores cadastrados aqui, a página mostra os quadros \"SUA MARCA\" de exemplo." }
+          - label: "Planos de patrocínio (4 planos)"
+            name: "plans"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Nome do plano", name: "title", widget: "string" }
+              - label: "Benefícios (um por linha)"
+                name: "bullets"
+                widget: "list"
+                field: { label: "Benefício", name: "item", widget: "string" }
+          - label: "Chamada final (Vamos juntos?)"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Texto", name: "text", widget: "text" }
+              - { label: "Foto", name: "photo", widget: "image", hint: "Foto vertical/retrato. A imagem é cortada automaticamente para preencher o espaço." }
+          - label: "Contato"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "WhatsApp (com DDD, só números)", name: "whatsapp", widget: "string", hint: "Ex: 74999758969" }
+              - { label: "Usuário do Instagram (sem @)", name: "instagram_handle", widget: "string" }
+              - { label: "E-mail de contato", name: "email", widget: "string" }
