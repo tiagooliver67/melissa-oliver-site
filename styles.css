@@ -249,6 +249,7 @@ footer{background:var(--ink);color:#fff;border-top:1px solid var(--line);padding
   .medal-wrap{display:none}
   .values{grid-template-columns:1fr 1fr}.team{grid-template-columns:1fr;gap:25px}.next{grid-template-columns:1fr}.next-image{height:300px}
   .support-grid{grid-template-columns:1fr 1fr}.instagram{grid-template-columns:1fr}.ig-grid{height:160px}
+  footer{grid-template-columns:1fr;gap:22px;text-align:left}.footer-motto{display:block;align-self:start;font-size:22px}.copy{grid-column:1}
 }
 @keyframes navDrop{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
 @media(max-width:600px){
@@ -256,10 +257,13 @@ footer{background:var(--ink);color:#fff;border-top:1px solid var(--line);padding
   .hero-image{width:100%;right:0;height:100%;opacity:.58}.hero-image img{object-position:84% 18%}
   .achievement{grid-template-columns:1fr}.achievement-text{padding:35px 22px}.achievement-image{grid-column:1;grid-row:auto;height:250px}
   .journey,.moments,.team,.support,.instagram{padding-left:22px;padding-right:22px}.timeline{grid-template-columns:1fr 1fr;gap:6px}.connector{display:none}
-  .values{grid-template-columns:1fr;padding:25px 22px}.values>div{border-right:0;border-bottom:1px solid #ddd;padding:18px 0}
+  .values{grid-template-columns:1fr;padding:30px 22px;gap:0}
+  .values>div{border-right:0;border-bottom:1px solid #ddd;padding:22px 0;text-align:center;display:flex;flex-direction:column;align-items:center}
+  .values i{margin:0 auto 12px}.values small{letter-spacing:2px}.values h3{margin:4px 0}.values p{max-width:260px;margin:0 auto}
+  .motto{flex-direction:column;text-align:center;gap:10px;padding-top:24px}.motto span{font-size:16px}
   .gallery{grid-template-columns:1fr 1fr;height:260px}.gallery .wide{grid-column:span 2}.team-intro h2{font-size:37px}.people{grid-template-columns:1fr 1fr}.people img{height:130px}
   .support-grid{grid-template-columns:1fr 1fr}.support-grid>div{border-bottom:1px solid #ddd}.ig-grid{grid-template-columns:repeat(3,1fr);height:210px}.ig-grid img:nth-child(n+4){display:none}
-  footer{grid-template-columns:1fr 1fr;padding-left:22px;padding-right:22px}.footer-motto{display:none}.copy{grid-column:1/-1}
+  footer{grid-template-columns:1fr;gap:20px;text-align:left;padding-left:22px;padding-right:22px}.footer-motto{display:block;align-self:start;font-size:20px}.copy{grid-column:1}
 }
 
 /* ===================================================== */
@@ -334,7 +338,8 @@ footer{background:var(--ink);color:#fff;border-top:1px solid var(--line);padding
 .sp-sponsors h2 em{font-style:normal;color:var(--red)}
 .sp-sponsors>p{font-size:10px;color:#999;max-width:460px;margin:0 auto 28px}
 .sp-logo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:760px;margin:0 auto}
-.sp-logo-grid div{border:1px solid #333;padding:24px 10px;font-family:"Barlow Condensed";font-size:13px;letter-spacing:1px;color:#777}
+.sp-logo-grid div{border:1px solid #333;padding:24px 10px;font-family:"Barlow Condensed";font-size:13px;letter-spacing:1px;color:#777;display:flex;align-items:center;justify-content:center;min-height:34px}
+.sp-logo-grid img{max-height:36px;max-width:100%;width:auto;height:auto;object-fit:contain}
 .sp-thanks{font-family:Caveat,cursive;font-size:24px;color:#eee;margin-top:26px}
 .sp-thanks em{color:var(--red);font-style:normal}
 

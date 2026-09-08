@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "copy": "Sua marca pode estar ao lado de uma atleta que está construindo um futuro através do karatê, com foco, disciplina e evolução.",
+    "photo": "assets/melissa-hero-full.jpg",
+    "location": "JOÃO DOURADO — BA"
+  },
+  "story": {
+    "text": "Melissa Oliver representa João Dourado no karatê e vem construindo uma trajetória de dedicação, superação e grandes conquistas. Seu compromisso inspira e mostra o poder do esporte na transformação de vidas.",
+    "photo": "assets/melissa-hero-fire.jpg",
+    "badge_title": "3º LUGAR — KATA",
+    "badge_event": "CAMPEONATO BAIANO DE KARATÊ 2026",
+    "quote": "\"DISCIPLINA HOJE,\n<b>CONQUISTAS</b> SEMPRE.\""
+  },
+  "why": [
+    { "title": "VISIBILIDADE", "text": "Sua marca associada à imagem da atleta em conteúdos digitais, competições e materiais de divulgação." },
+    { "title": "CONEXÃO", "text": "Apoio ao esporte, à juventude e ao desenvolvimento de uma atleta local." },
+    { "title": "POSICIONAMENTO", "text": "Associação a valores como disciplina, foco, determinação e superação." },
+    { "title": "PRESENÇA LOCAL", "text": "Fortalecimento da relação da sua empresa com João Dourado e região." }
+  ],
+  "expo_photos": [
+    "assets/melissa-hero-fire.jpg",
+    "assets/melissa-hero-full.jpg",
+    "assets/melissa-hero-fire.jpg",
+    "assets/melissa-hero-full.jpg"
+  ],
+  "sponsors": [],
+  "plans": [
+    { "title": "APOIADOR", "bullets": ["Agradecimento nas redes sociais", "Logo na página de patrocinadores"] },
+    { "title": "PARCEIRO", "bullets": ["Logo na página de patrocinadores", "Divulgação nas redes sociais", "Marca associada a conteúdos da atleta", "Agradecimento especial"] },
+    { "title": "PATROCINADOR OFICIAL", "bullets": ["Destaque da marca", "Logo em materiais selecionados", "Presença em campanhas", "Conteúdos exclusivos"] },
+    { "title": "MASTER", "bullets": ["Plano personalizado", "Maior exposição e impacto", "Parceria sob medida com a marca"] }
+  ],
+  "cta": {
+    "text": "Entre em contato e saiba como sua empresa pode fazer parte dessa jornada.",
+    "photo": "assets/melissa-hero-full.jpg"
+  },
+  "contact": {
+    "whatsapp": "74999758969",
+    "instagram_handle": "melissaoliver.oficial",
+    "email": "tiagooliver67@gmail.com"
+  }
+}
