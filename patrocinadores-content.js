@@ -58,10 +58,11 @@
           setHtmlWithBreaks("sp-why-" + i + "-text", item.text);
         });
       }
-      if (Array.isArray(d.expo_photos)) {
-        d.expo_photos.forEach(function (photo, i) {
-          setImg("sp-expo-photo-" + i, photo);
-        });
+      if (d.expo) {
+        setImg("sp-expo-photo-0", d.expo.kimono);
+        setImg("sp-expo-photo-1", d.expo.camisas);
+        setImg("sp-expo-photo-2", d.expo.redes_sociais);
+        setImg("sp-expo-photo-3", d.expo.eventos);
       }
       if (Array.isArray(d.sponsors) && d.sponsors.length) {
         var grid = document.getElementById("sp-logo-grid");

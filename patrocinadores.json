@@ -17,12 +17,12 @@
     { "title": "POSICIONAMENTO", "text": "Associação a valores como disciplina, foco, determinação e superação." },
     { "title": "PRESENÇA LOCAL", "text": "Fortalecimento da relação da sua empresa com João Dourado e região." }
   ],
-  "expo_photos": [
-    "assets/melissa-hero-fire.jpg",
-    "assets/melissa-hero-full.jpg",
-    "assets/melissa-hero-fire.jpg",
-    "assets/melissa-hero-full.jpg"
-  ],
+  "expo": {
+    "kimono": "assets/melissa-hero-fire.jpg",
+    "camisas": "assets/melissa-hero-full.jpg",
+    "redes_sociais": "assets/melissa-hero-fire.jpg",
+    "eventos": "assets/melissa-hero-full.jpg"
+  },
   "sponsors": [],
   "plans": [
     { "title": "APOIADOR", "bullets": ["Agradecimento nas redes sociais", "Logo na página de patrocinadores"] },
