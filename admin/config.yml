@@ -95,10 +95,14 @@ collections:
             fields:
               - { label: "Título", name: "title", widget: "string" }
               - { label: "Texto", name: "text", widget: "text" }
-          - label: "Fotos — Onde sua marca aparece (Kimono, Camisas, Redes sociais, Eventos, nessa ordem)"
-            name: "expo_photos"
-            widget: "list"
-            field: { label: "Foto", name: "photo", widget: "image" }
+          - label: "Onde sua marca aparece (4 fotos)"
+            name: "expo"
+            widget: "object"
+            fields:
+              - { label: "Foto — Kimono", name: "kimono", widget: "image", hint: "Aparece no 1º quadro, com a etiqueta \"SUA MARCA AQUI\"." }
+              - { label: "Foto — Camisas", name: "camisas", widget: "image" }
+              - { label: "Foto — Redes sociais", name: "redes_sociais", widget: "image" }
+              - { label: "Foto — Eventos", name: "eventos", widget: "image" }
           - label: "Patrocinadores (logos)"
             name: "sponsors"
             widget: "list"
